@@ -65,4 +65,4 @@ readLogs txt = traverse parseLine (filter (not . null) (lines txt))
       case reads linha of
         [(entry, "")] -> Right entry
         _ -> Left "Auditoria.log inválido (falha na desserialização)."
- ⁠
+
